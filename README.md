@@ -13,3 +13,26 @@ This project simulates an electric vehicle (EV) charging station system, designe
 - Weather.java: Simulates weather conditions that might affect the energy management for the charging station.
 
 
+## Car.java
+- Constructor(s): Initializes a new instance of a Car, likely with attributes such as license plate number, battery status, or owner details.
+- Getters/Setters: Methods to access and modify the car's attributes, such as getting the license plate or battery level.
+## CarQueue.java
+- addCar(Car car): Adds a car to the queue, preparing it for charging.
+- getNextCar(): Retrieves and removes the next car in the queue to be charged.
+- getQueueSize(): Returns the current number of cars waiting in the queue.
+## ChargingExceptions.java
+## Custom Exception Classes: 
+- Defines various exceptions like QueueFullException, ChargingFailureException, etc., to handle specific error scenarios related to the charging process.
+## ChargingStation.java
+- startChargingProcess(): Initiates the charging process for cars. It may loop through the available charging slots and assign cars from the queue to each slot for charging.
+- chargeCar(int slot): Handles the charging logic for a single car at a given charging slot. This includes updating the GUI, managing the energy source, simulating the charging duration, and logging the charging completion.
+## ChargingStationGUI.java
+- updateChargingSlot(int slot, String status): Updates the GUI component representing a charging slot with the current status, such as occupied, charging, or available.
+- displayQueueStatus(List<Car> queue): Optionally, shows the status of the queue, including cars waiting to be charged.
+## EnergyManagement.java
+- getCurrentEnergySource(): Determines and returns the current energy source for charging, which could be influenced by external factors like the weather.
+- adjustEnergySource(Weather weather): Adjusts the energy source based on the current weather conditions, optimizing for efficiency and sustainability.
+## Main.java
+- main(String[] args): The main method that sets up the simulation environment, initializes all components, and starts the charging station simulation.
+## Weather.java
+- getCurrentWeather(): Returns the current weather conditions, which may affect the energy management in the charging station.
