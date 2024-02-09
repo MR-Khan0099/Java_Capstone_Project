@@ -35,3 +35,7 @@ This project simulates an electric vehicle (EV) charging station system, designe
 - **main(String[] args):** The main method that sets up the simulation environment, initializes all components, and starts the charging station simulation.
 ## Weather.java
 - **getCurrentWeather():** Returns the current weather conditions, which may affect the energy management in the charging station.
+
+## Development Environment
+- JDK Version: 21
+- Build Tool: Maven 3.6
