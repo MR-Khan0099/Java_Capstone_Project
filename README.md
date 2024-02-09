@@ -21,7 +21,7 @@ This project simulates an electric vehicle (EV) charging station system, designe
 - getNextCar(): Retrieves and removes the next car in the queue to be charged.
 - getQueueSize(): Returns the current number of cars waiting in the queue.
 ## ChargingExceptions.java
-## Custom Exception Classes: 
+Custom Exception Classes: 
 - Defines various exceptions like QueueFullException, ChargingFailureException, etc., to handle specific error scenarios related to the charging process.
 ## ChargingStation.java
 - startChargingProcess(): Initiates the charging process for cars. It may loop through the available charging slots and assign cars from the queue to each slot for charging.
